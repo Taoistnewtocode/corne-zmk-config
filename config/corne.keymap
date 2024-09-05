@@ -125,7 +125,7 @@
             bindings = <
 &kp ESC  &kp Q  &kp W  &kp F          &kp P           &kp B        &kp J      &kp L        &kp U                 &kp Y    &mt UNDERSCORE KP_MINUS  &kp BSPC
 &kp TAB  &kp A  &kp R  &kp S          &kp T           &kp G        &kp M      &kp N        &kp E                 &kp I    &kp O                    &kp TAB
-&kp TAB  &kp Z  &kp X  &kp C          &kp D           &kp V        &kp K      &kp H        &mt APOSTROPHE COMMA  &kp DOT  &kp APOSTROPHE           &kp RSHFT
+&kp TAB  &kp Z  &kp X  &kp C          &kp D           &kp V        &kp K      &kp H        &mt APOSTROPHE COMMA  &kp DOT  &kp KP_ASTERISK          &kp RSHFT
                        &kp BACKSPACE  &lt 1 LEFT_ALT  &kp ENTER    &kp SPACE  &lt 2 LCTRL  &kp TAB
             >;
         };
