@@ -115,6 +115,20 @@
             bindings = <&kp PIPE>;
             key-positions = <7 19>;
         };
+
+        copy {
+            bindings = <&copy>;
+            key-positions = <16 37>;
+        };
+    };
+
+    macros {
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&copy &kp C_AC_COPY &kp LC(C)>;
+            label = "COPY";
+        };
     };
 
     keymap {
@@ -143,9 +157,9 @@
         bt_layer {
             label = "2";
             bindings = <
-&kp ESC       &kp QUESTION  &kp LEFT_PARENTHESIS  &kp CARET     &kp PRINTSCREEN  &kp PERCENT        &mt EXCLAMATION PIPE  &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2  &kp KP_MINUS      &none
-&none         &kp AT_SIGN   &kp LEFT_BRACKET      &kp DOLLAR    &kp POUND        &kp KP_ASTERISK    &kp EQUAL             &kp AMPERSAND   &none              &kp PIPE      &kp KP_PLUS       &none
-&bt BT_SEL 4  &bt BT_SEL 3  &kp SEMICOLON         &kp COLON     &kp LEFT_BRACE   &kp RIGHT_BRACE    &none                 &kp APOSTROPHE  &kp DOUBLE_QUOTES  &none         &ext_power EP_ON  &none
+&kp ESC       &kp QUESTION  &kp LEFT_PARENTHESIS  &kp CARET     &kp PRINTSCREEN  &kp PERCENT        &mt EXCLAMATION PIPE  &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2       &kp KP_MINUS       &none
+&none         &kp AT_SIGN   &kp LEFT_BRACKET      &kp DOLLAR    &kp POUND        &kp KP_ASTERISK    &kp EQUAL             &kp AMPERSAND   &none              &kp PIPE           &kp KP_PLUS        &none
+&bt BT_SEL 4  &bt BT_SEL 3  &kp SEMICOLON         &kp COLON     &kp LEFT_BRACE   &kp RIGHT_BRACE    &none                 &kp APOSTROPHE  &kp DOUBLE_QUOTES  &ext_power EP_TOG  &ext_power EP_OFF  &none
                                                   &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_CLR_ALL     &none                 &none           &none
             >;
         };
