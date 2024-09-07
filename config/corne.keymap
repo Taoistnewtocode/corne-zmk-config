@@ -146,10 +146,10 @@
         default_layer {
             label = "0";
             bindings = <
-&kp ESC  &kp Q  &kp W  &kp F          &kp P       &kp B        &kp J      &kp L        &kp U                 &kp Y    &mt UNDERSCORE KP_MINUS  &kp BSPC
-&kp TAB  &kp A  &kp R  &kp S          &kp T       &kp G        &kp M      &kp N        &kp E                 &kp I    &kp O                    &kp TAB
-&kp TAB  &kp Z  &kp X  &kp C          &kp D       &kp V        &kp K      &kp H        &mt APOSTROPHE COMMA  &kp DOT  &kp KP_ASTERISK          &kp RSHFT
-                       &kp BACKSPACE  &lt 1 LALT  &kp ENTER    &kp SPACE  &lt 2 RCTRL  &kp LEFT_SHIFT
+&kp ESC  &kp Q             &kp W  &kp F          &kp P       &kp B        &kp J      &kp L        &kp U                 &kp Y              &mt UNDERSCORE KP_MINUS  &kp BSPC
+&kp TAB  &hm LEFT_SHIFT A  &kp R  &kp S          &kp T       &kp G        &kp M      &kp N        &kp E                 &hm PIPE I         &hm RIGHT_SHIFT O        &kp TAB
+&kp TAB  &kp Z             &kp X  &kp C          &kp D       &kp V        &kp K      &kp H        &mt APOSTROPHE COMMA  &hm PERCENT SLASH  &kp KP_ASTERISK          &kp RSHFT
+                                  &kp BACKSPACE  &lt 1 LALT  &kp SPACE    &kp ENTER  &lt 2 RCTRL  &kp TAB
             >;
         };
 
@@ -158,8 +158,8 @@
             bindings = <
 &none  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp CARET       &kp PRINTSCREEN  &kp PERCENT        &mt EXCLAMATION PIPE  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &none
 &none  &kp AT_SIGN   &kp LEFT_BRACKET      &kp DOLLAR      &kp POUND        &kp KP_ASTERISK    &kp EQUAL             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &none
-&none  &none         &none                 &mt SEMI COLON  &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp AMPERSAND         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERCENT   &none
-                                           &none           &none            &kp LEFT_SHIFT     &kp TAB               &kp KP_NUMBER_0  &kp PERIOD
+&none  &none         &none                 &mt SEMI COLON  &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp AMPERSAND         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT       &none
+                                           &none           &none            &kp LEFT_SHIFT     &kp EQUAL             &kp EXCLAMATION  &kp NUMBER_0
             >;
         };
 
@@ -168,8 +168,8 @@
             bindings = <
 &kp ESC       &kp QUESTION  &kp LEFT_PARENTHESIS  &kp CARET       &kp PRINTSCREEN  &kp PERCENT        &mt EXCLAMATION PIPE  &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2  &kp KP_MINUS  &none
 &none         &kp AT_SIGN   &kp LEFT_BRACKET      &kp DOLLAR      &kp POUND        &kp KP_ASTERISK    &kp EQUAL             &kp AMPERSAND   &none              &kp PIPE      &kp KP_PLUS   &none
-&bt BT_SEL 4  &bt BT_PRV    &bt BT_NXT            &mt SEMI COLON  &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp AMPS              &kp APOSTROPHE  &kp DOUBLE_QUOTES  &none         &none         &none
-                                                  &bt BT_SEL 0    &kp LA(TAB)      &bt BT_CLR_ALL     &none                 &none           &none
+&bt BT_SEL 4  &bt BT_PRV    &bt BT_NXT            &mt SEMI COLON  &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp AMPS              &kp APOSTROPHE  &kp DOUBLE_QUOTES  &none         &kp DOT       &none
+                                                  &bt BT_SEL 0    &kp LA(TAB)      &bt BT_CLR_ALL     &kp EQUAL             &none           &none
             >;
         };
 
