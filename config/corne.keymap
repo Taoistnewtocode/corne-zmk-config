@@ -132,11 +132,15 @@
     };
 
     macros {
-        copy: copy {
+        testtt: testtt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&copy &kp C_AC_COPY &kp LC(C)>;
-            label = "COPY";
+            bindings =
+                <&none &kp LS(T) &kp H &kp E &kp SPACE &kp P &kp A &kp T &kp I &kp E &kp N &kp T &kp SPACE &kp E &kp X &kp P &kp E &kp R &kp I &kp E &kp N &kp C &kp E &kp D &kp SPACE &kp S &kp Y &kp M &kp P &kp T &kp O &kp M &kp S &kp SPACE &kp O &kp F &kp SPACE>,
+                <&macro_press>,
+                <&kp P &kp COMMA &kp PERIOD>;
+
+            label = "TESTTT";
         };
     };
 
@@ -146,30 +150,30 @@
         default_layer {
             label = "0";
             bindings = <
-&kp ESC  &kp Q             &kp W  &kp F          &kp P       &kp B        &kp J      &kp L        &kp U                 &kp Y              &mt UNDERSCORE KP_MINUS  &kp BSPC
-&kp TAB  &hm LEFT_SHIFT A  &kp R  &kp S          &kp T       &kp G        &kp M      &kp N        &kp E                 &hm PIPE I         &hm RIGHT_SHIFT O        &kp TAB
-&kp TAB  &kp Z             &kp X  &kp C          &kp D       &kp V        &kp K      &kp H        &mt APOSTROPHE COMMA  &hm PERCENT SLASH  &kp KP_ASTERISK          &kp RSHFT
-                                  &kp BACKSPACE  &lt 1 LALT  &kp SPACE    &kp ENTER  &lt 2 RCTRL  &kp TAB
+&kp ESC  &kp Q             &kp W  &kp F    &kp P      &kp B          &kp J        &kp L          &kp U                &kp Y       &mt UNDERSCORE KP_MINUS  &kp BSPC
+&kp TAB  &hm LEFT_SHIFT A  &kp R  &kp S    &kp T      &kp G          &kp M        &kp N          &kp E                &hm PIPE I  &hm RIGHT_SHIFT O        &kp TAB
+&kp TAB  &kp Z             &kp X  &kp C    &kp D      &kp V          &kp K        &kp H          &hm BACKSLASH SLASH  &kp COMMA   &kp DOT                  &kp RSHFT
+                                  &kp TAB  &kp SPACE  &lt 1 LC(C)    &lt 2 LC(V)  &kp BACKSPACE  &kp ENTER
             >;
         };
 
         number_layer {
             label = "1";
             bindings = <
-&none  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp CARET       &kp PRINTSCREEN  &kp PERCENT        &mt EXCLAMATION PIPE  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &none
-&none  &kp AT_SIGN   &kp LEFT_BRACKET      &kp DOLLAR      &kp POUND        &kp KP_ASTERISK    &kp EQUAL             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &none
-&none  &none         &none                 &mt SEMI COLON  &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp AMPERSAND         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT       &none
-                                           &none           &none            &kp LEFT_SHIFT     &kp EQUAL             &kp EXCLAMATION  &kp NUMBER_0
+&none  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp CARET        &kp PRINTSCREEN  &kp PERCENT        &kp N7        &kp N8        &kp N9        &kp MINUS    &kp KP_MINUS     &none
+&none  &kp AT_SIGN   &kp LEFT_BRACKET      &kp KP_MULTIPLY  &kp POUND        &kp DOLLAR         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS  &kp KP_PLUS      &none
+&none  &none         &none                 &mt SEMI COLON   &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA    &kp KP_ASTERISK  &none
+                                           &none            &none            &kp LEFT_SHIFT     &kp EQUAL     &kp N0        &kp NUMBER_0
             >;
         };
 
-        bt_layer {
+        symbol {
             label = "2";
             bindings = <
-&kp ESC       &kp QUESTION  &kp LEFT_PARENTHESIS  &kp CARET       &kp PRINTSCREEN  &kp PERCENT        &mt EXCLAMATION PIPE  &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2  &kp KP_MINUS  &none
-&none         &kp AT_SIGN   &kp LEFT_BRACKET      &kp DOLLAR      &kp POUND        &kp KP_ASTERISK    &kp EQUAL             &kp AMPERSAND   &none              &kp PIPE      &kp KP_PLUS   &none
-&bt BT_SEL 4  &bt BT_PRV    &bt BT_NXT            &mt SEMI COLON  &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp AMPS              &kp APOSTROPHE  &kp DOUBLE_QUOTES  &none         &kp DOT       &none
-                                                  &bt BT_SEL 0    &kp LA(TAB)      &bt BT_CLR_ALL     &kp EQUAL             &none           &none
+&kp ESC  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp CARET        &kp PRINTSCREEN  &kp PERCENT        &mt EXCLAMATION PIPE  &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2  &kp KP_MINUS  &none
+&none    &kp AT_SIGN   &kp LEFT_BRACKET      &kp KP_MULTIPLY  &kp POUND        &kp DOLLAR         &kp EQUAL             &kp AMPERSAND   &none              &kp PIPE      &kp KP_PLUS   &none
+&none    &none         &kp SEMI              &kp COLON        &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp AMPS              &kp APOSTROPHE  &kp DOUBLE_QUOTES  &none         &kp DOT       &none
+                                             &bt BT_PRV       &bt BT_NXT       &bt BT_CLR_ALL     &none                 &none           &none
             >;
         };
 
