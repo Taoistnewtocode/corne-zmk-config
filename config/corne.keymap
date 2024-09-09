@@ -149,20 +149,20 @@
         default_layer {
             label = "0";
             bindings = <
-&kp ESC  &kp Q             &kp W  &kp F    &kp P          &kp B          &kp J        &kp L      &kp U                &kp Y                &mt UNDERSCORE KP_MINUS  &kp BSPC
-&kp TAB  &hm LEFT_SHIFT A  &kp R  &kp S    &kp T          &kp G          &kp M        &kp N      &kp E                &hm PIPE I           &hm RIGHT_SHIFT O        &kp TAB
-&kp TAB  &kp Z             &kp X  &kp C    &kp D          &kp V          &kp K        &kp H      &hm BACKSLASH SLASH  &hm ASTERISK KP_DOT  &hm APOSTROPHE COMMA     &kp RSHFT
-                                  &kp TAB  &kp BACKSPACE  &lt 1 LC(C)    &lt 2 LC(V)  &kp SPACE  &kp ENTER
+&kp ESC  &kp Q             &kp W  &kp F           &kp P          &kp B      &kp J      &kp L        &kp U            &kp Y       &mt UNDERSCORE KP_MINUS  &kp BSPC
+&kp TAB  &hm LEFT_SHIFT A  &kp R  &hm LEFT_ALT S  &hm LCTRL T    &kp G      &kp M      &hm RCTRL N  &hm RIGHT_ALT E  &hm PIPE I  &hm RIGHT_SHIFT O        &kp TAB
+&kp TAB  &kp Z             &kp X  &kp C           &kp D          &kp V      &kp K      &kp H        &kp COMMA        &kp PERIOD  &kp SLASH                &kp RSHFT
+                                  &tog 1          &kp BACKSPACE  &kp TAB    &kp ENTER  &kp SPACE    &tog 2
             >;
         };
 
         number_layer {
             label = "1";
             bindings = <
-&none  &kp QUESTION      &kp LEFT_PARENTHESIS  &kp CARET        &kp PRINTSCREEN  &kp PERCENT        &kp N7        &kp N8        &kp N9        &kp MINUS    &kp KP_MINUS     &none
-&none  &kp AT_SIGN       &kp LEFT_BRACKET      &kp KP_MULTIPLY  &kp POUND        &kp DOLLAR         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS  &kp KP_PLUS      &none
-&none  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES     &mt SEMI COLON   &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA    &kp KP_ASTERISK  &none
-                                               &none            &none            &kp LEFT_SHIFT     &kp EQUAL     &kp N0        &kp NUMBER_0
+&none  &kp AT_SIGN       &kp LEFT_PARENTHESIS  &kp CARET            &kp PRINTSCREEN  &kp PERCENT        &kp N7        &kp N8        &kp N9        &kp MINUS    &kp KP_MINUS     &none
+&none  &kp ASTERISK      &kp KP_PLUS           &hm BACKSLASH SLASH  &kp POUND        &kp DOLLAR         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS  &kp KP_PLUS      &none
+&none  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES     &mt SEMI COLON       &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA    &kp KP_ASTERISK  &none
+                                               &none                &none            &kp LEFT_SHIFT     &kp EQUAL     &kp N0        &kp NUMBER_0
             >;
         };
 
