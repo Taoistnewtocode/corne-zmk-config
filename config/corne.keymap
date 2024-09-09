@@ -149,9 +149,9 @@
         default_layer {
             label = "0";
             bindings = <
-&kp ESC  &kp Q             &kp W  &kp F           &kp P          &kp B      &kp J      &kp L        &kp U            &kp Y       &mt UNDERSCORE KP_MINUS  &kp BSPC
-&kp TAB  &hm LEFT_SHIFT A  &kp R  &hm LEFT_ALT S  &hm LCTRL T    &kp G      &kp M      &hm RCTRL N  &hm RIGHT_ALT E  &hm PIPE I  &hm RIGHT_SHIFT O        &kp TAB
-&kp TAB  &kp Z             &kp X  &kp C           &kp D          &kp V      &kp K      &kp H        &kp COMMA        &kp PERIOD  &kp SLASH                &kp RSHFT
+&kp ESC  &kp Q             &kp W  &kp F           &kp P          &kp B      &kp J      &kp L        &kp U            &kp Y       &kp SQT            &kp BSPC
+&kp TAB  &hm LEFT_SHIFT A  &kp R  &hm LEFT_ALT S  &hm LCTRL T    &kp G      &kp M      &hm RCTRL N  &hm RIGHT_ALT E  &hm PIPE I  &hm RIGHT_SHIFT O  &kp TAB
+&kp TAB  &kp Z             &kp X  &kp C           &kp D          &kp V      &kp K      &kp H        &kp COMMA        &kp PERIOD  &kp SLASH          &kp RSHFT
                                   &tog 1          &kp BACKSPACE  &kp TAB    &kp ENTER  &kp SPACE    &tog 2
             >;
         };
@@ -159,20 +159,20 @@
         number_layer {
             label = "1";
             bindings = <
-&none  &kp AT_SIGN       &kp LEFT_PARENTHESIS  &kp CARET            &kp PRINTSCREEN  &kp PERCENT        &kp N7        &kp N8        &kp N9        &kp MINUS    &kp KP_MINUS     &none
-&none  &kp ASTERISK      &kp KP_PLUS           &hm BACKSLASH SLASH  &kp POUND        &kp DOLLAR         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS  &kp KP_PLUS      &none
-&none  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES     &mt SEMI COLON       &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA    &kp KP_ASTERISK  &none
-                                               &none                &none            &kp LEFT_SHIFT     &kp EQUAL     &kp N0        &kp NUMBER_0
+&none  &kp AT_SIGN       &kp LEFT_PARENTHESIS  &kp CARET              &kp PRINTSCREEN  &kp PERCENT        &kp N7        &kp N8        &kp N9        &kp MINUS    &kp KP_MINUS     &none
+&none  &kp ASTERISK      &kp LEFT_BRACKET      &hm BACKSLASH AT_SIGN  &kp POUND        &kp DOLLAR         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS  &kp KP_PLUS      &none
+&none  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES     &mt SEMI COLON         &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA    &kp KP_ASTERISK  &none
+                                               &none                  &none            &kp LEFT_SHIFT     &kp EQUAL     &kp N0        &kp NUMBER_0
             >;
         };
 
         symbol {
             label = "2";
             bindings = <
-&kp ESC  &kp QUESTION      &kp LEFT_PARENTHESIS  &kp CARET        &kp PRINTSCREEN  &kp PERCENT        &mt EXCLAMATION PIPE  &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2  &kp KP_MINUS  &none
-&none    &kp AT_SIGN       &kp LEFT_BRACKET      &kp KP_MULTIPLY  &kp POUND        &kp DOLLAR         &kp EQUAL             &kp AMPERSAND   &none              &kp PIPE      &kp KP_PLUS   &none
-&none    &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES     &hm SEMI COLON   &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp AMPS              &kp APOSTROPHE  &kp DOUBLE_QUOTES  &none         &kp DOT       &none
-                                                 &bt BT_PRV       &bt BT_NXT       &bt BT_CLR_ALL     &none                 &none           &none
+&kp ESC  &kp QUESTION      &kp LEFT_PARENTHESIS  &kp CARET       &kp PRINTSCREEN  &kp PERCENT        &mt EXCLAMATION PIPE  &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2  &kp KP_MINUS  &none
+&none    &kp ASTERISK      &kp LEFT_BRACKET      &kp AT_SIGN     &kp POUND        &kp DOLLAR         &kp EQUAL             &kp AMPERSAND   &none              &kp PIPE      &kp KP_PLUS   &none
+&none    &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES     &hm SEMI COLON  &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp AMPS              &kp APOSTROPHE  &kp DOUBLE_QUOTES  &none         &kp DOT       &none
+                                                 &bt BT_PRV      &bt BT_NXT       &bt BT_CLR_ALL     &none                 &none           &none
             >;
         };
 
