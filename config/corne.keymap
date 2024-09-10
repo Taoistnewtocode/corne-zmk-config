@@ -42,8 +42,8 @@
         };
 
         b {
-            bindings = <&kp TAB>;
-            key-positions = <16 15>;
+            bindings = <&kp EQUAL>;
+            key-positions = <3 4>;
         };
 
         c {
@@ -138,6 +138,26 @@
             bindings = <&to 0>;
             key-positions = <37 40>;
         };
+
+        btclear {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <17 18>;
+        };
+
+        tol1 {
+            bindings = <&to 1>;
+            key-positions = <37 39>;
+        };
+
+        tolay2 {
+            bindings = <&to 3>;
+            key-positions = <37 41>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <15 16>;
+        };
     };
 
     macros {
@@ -162,17 +182,27 @@
 &kp ESC  &kp Q             &kp W  &kp F             &kp P          &kp B      &kp J      &kp L        &kp U            &kp Y       &kp SQT            &kp MINUS
 &kp TAB  &hm LEFT_SHIFT A  &kp R  &hm LEFT_ALT S    &hm LCTRL T    &kp G      &kp M      &hm RCTRL N  &hm RIGHT_ALT E  &hm PIPE I  &hm RIGHT_SHIFT O  &kp EQUAL
 &kp TAB  &kp Z             &kp X  &kp C             &kp D          &kp V      &kp K      &kp H        &kp COMMA        &kp PERIOD  &kp SLASH          &kp ASTERISK
-                                  &kp LEFT_BRACKET  &kp BACKSPACE  &kp TAB    &kp ENTER  &kp SPACE    &tog 1
+                                  &kp LEFT_BRACKET  &kp BACKSPACE  &kp TAB    &kp ENTER  &kp SPACE    &to 1
             >;
         };
 
         number_layer {
             label = "1";
             bindings = <
+&none  &kp AT_SIGN              &kp LEFT_PARENTHESIS  &kp CARET         &kp BACKSLASH   &kp PERCENT        &kp N7        &kp N8        &kp N9        &kp MINUS                 &kp KP_MINUS     &none
+&none  &hm LEFT_SHIFT ASTERISK  &kp LEFT_BRACKET      &kp GREATER_THAN  &kp POUND       &kp EQUAL          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &hm RIGHT_SHIFT ASTERISK  &kp EQUAL        &none
+&none  &kp DOLLAR               &kp SEMICOLON         &kp AMPERSAND     &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD                &kp KP_ASTERISK  &none
+                                                      &kp LEFT_BRACKET  &kp BACKSPACE   &kp TAB            &kp ENTER     &kp N0        &to 0
+            >;
+        };
+
+        layer_5 {
+            label = "1";
+            bindings = <
 &none  &kp AT_SIGN   &kp LEFT_PARENTHESIS  &kp CARET         &kp BACKSLASH   &kp PERCENT        &kp N7        &kp N8        &kp N9        &kp MINUS    &kp KP_MINUS     &none
 &none  &kp ASTERISK  &kp LEFT_BRACKET      &kp GREATER_THAN  &kp POUND       &kp EQUAL          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS  &kp EQUAL        &none
 &none  &kp DOLLAR    &kp SEMICOLON         &kp AMPERSAND     &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD   &kp KP_ASTERISK  &none
-                                           &kp LEFT_BRACKET  &kp BACKSPACE   &kp TAB            &kp EQUAL     &kp N0        &to 0
+                                           &bt BT_PRV        &bt BT_NXT      &bt BT_CLR_ALL     &kp ENTER     &kp N0        &to 0
             >;
         };
 
