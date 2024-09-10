@@ -179,9 +179,9 @@
         default_layer {
             label = "0";
             bindings = <
-&kp ESC  &kp Q             &kp W  &kp F             &kp P          &kp B      &kp J      &kp L        &kp U            &kp Y       &kp SQT            &kp MINUS
-&kp TAB  &hm LEFT_SHIFT A  &kp R  &hm LEFT_ALT S    &hm LCTRL T    &kp G      &kp M      &hm RCTRL N  &hm RIGHT_ALT E  &hm PIPE I  &hm RIGHT_SHIFT O  &kp EQUAL
-&kp TAB  &kp Z             &kp X  &kp C             &kp D          &kp V      &kp K      &kp H        &kp COMMA        &kp PERIOD  &kp SLASH          &kp ASTERISK
+&kp ESC  &kp Q             &kp W  &kp F             &kp P          &kp B      &kp J      &kp L        &kp U            &kp Y                &kp SQT              &kp MINUS
+&kp TAB  &hm LEFT_SHIFT A  &kp R  &hm LEFT_ALT S    &hm LCTRL T    &kp G      &kp M      &hm RCTRL N  &hm RIGHT_ALT E  &hm PIPE I           &hm RIGHT_SHIFT O    &kp EQUAL
+&kp TAB  &kp Z             &kp X  &kp C             &kp D          &kp V      &kp K      &kp H        &kp COMMA        &mt ASTERISK PERIOD  &hm BACKSLASH SLASH  &kp ASTERISK
                                   &kp LEFT_BRACKET  &kp BACKSPACE  &kp TAB    &kp ENTER  &kp SPACE    &to 1
             >;
         };
